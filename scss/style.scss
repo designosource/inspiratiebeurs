@@ -1,0 +1,259 @@
+/* !------------------ CONSTANTS -------------------- */
+$wit: #ffffff;
+$groen: #AAE505;
+$donkergroen: #8BAA0B;
+$donkergrijs: #333333;
+
+
+/* !------------------ GENERAL -------------------- */
+html {
+    -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+.container{
+	width: 90%;
+	margin: 0 auto;
+	padding: 50px 0;
+	text-align: center;
+	color: $donkergrijs;
+}
+
+p, li, a{
+	
+	color: $donkergrijs;
+}
+
+
+h1{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-bottom: 30px;
+	font-size: 25px;
+}
+
+h2, .info li{
+	font-family: sans-serif;
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+.icon{
+	margin-bottom: 30px;
+}
+
+p{
+	font-family: serif;
+	font-style: italic;
+	line-height: 25px;
+}
+
+.underline{
+	border-bottom: 1px dotted $wit;
+}
+
+.v-center-outer{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		.v-center{
+			display: table;
+			height: 100%;
+			width: 100%;
+			.v-center-inner{
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+			}
+		}
+}
+
+.button, .combi{
+		font-family: sans-serif;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: 800;
+		font-size: 12px;
+		padding: 10px 15px;
+		
+		&:hover{
+			background: transparent;
+			border: 3px solid;
+			padding: 7px 12px;
+		}
+	}
+	
+
+
+
+/* !------------------ HEADER -------------------- */
+header{
+	background-color: $groen;
+	background-image: url(../img/gym.png);
+	background-image: 
+    linear-gradient(transparent, transparent),
+    url(../img/gym.svg);
+	background-size: cover;
+	background-position-x: -50px;
+	height: 100vh;
+	
+	
+	.container{
+		position: relative;
+	}
+	
+	h1{
+		color: $wit;
+	}
+	
+	p{
+		font-size: 20px;
+		line-height: 30px;
+		margin: 0 auto;
+		color: $wit;
+		margin-bottom: 60px;
+	}
+	
+	.button{
+		background-color: $wit;
+		color: $donkergroen;
+		
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		
+		&:hover{
+			border-color: $wit;
+			color: $wit;
+		}
+	}
+}
+
+
+
+
+/* !------------------ ABOUT -------------------- */
+.about{
+	.col:first-child{
+		margin-bottom: 60px;
+	}
+	
+	a{
+			color: $donkergrijs;
+			text-decoration: none;
+			border-bottom: 1px dotted $donkergrijs;
+			
+			&:hover{
+				border: none;
+			}
+		}
+}
+
+
+
+/* !------------------ TICKETS -------------------- */
+.tickets{
+	background-color: $donkergrijs;
+	
+	p, h2{
+		color: $wit;
+	}
+	
+	h2{
+		margin-bottom: 15px;
+	}
+	
+	p{
+		margin-bottom: 30px;
+	}
+	
+	.sm{
+		color: $wit;
+		text-decoration: none;
+		border-bottom: 1px dotted $wit;
+			
+			&:hover{
+				border: none;
+			}
+	}
+	
+	.combi{
+		border: 3px solid $groen;
+		background: transparent;
+		color: $groen;		
+		padding: 7px 12px;
+		display: block;
+		margin: 0 auto;
+		
+		&:hover{
+			border: 3px solid $groen !important;
+			background-color: $groen !important;
+			color: $donkergrijs !important;
+		}
+	}
+	
+	.button{
+		background-color: $wit;
+		color: $donkergrijs;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 15px;
+		
+		&.button:hover{
+			border-color: $wit !important;
+			background: transparent;
+			color: $wit;
+		}
+	}
+	
+	.ticketoption{
+		margin: 0 auto;
+		display: table;
+	}
+}
+
+/* !------------------ INFO -------------------- */
+.info{
+	margin: 0 auto;
+	text-align: center;
+	
+	ul{
+	margin: 0 auto;
+	display: block;
+		li{
+			padding: 20px 0 10px 0;
+			border-top: 1px solid #eaeaea;
+			a{
+				text-decoration: none; 
+				color: $donkergrijs;
+			}
+		}
+	}
+}
+
+/* !------------------ FOOTER -------------------- */
+footer{
+	background-color: $groen;
+	.container{
+		padding: 15px 0;
+		
+		a{
+			color: $donkergrijs;
+			text-decoration: none;
+			border-bottom: 1px dotted $donkergrijs;
+			
+			&:hover{
+				border: none;
+			}
+		}
+		
+		
+		.imd-logo{
+			width: 30px;
+			border: none;
+		}
+	}
+}

@@ -1,0 +1,174 @@
+/* !------------------ CONSTANTS -------------------- */
+/* !------------------ GENERAL -------------------- */
+html {
+  -webkit-text-size-adjust: 100%;
+  /* Prevent font scaling in landscape while allowing user zoom */ }
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+  color: #333333; }
+
+p, li, a {
+  color: #333333; }
+
+h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 30px;
+  font-size: 25px; }
+
+h2, .info li {
+  font-family: sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 10px; }
+
+.icon {
+  margin-bottom: 30px; }
+
+p {
+  font-family: serif;
+  font-style: italic;
+  line-height: 25px; }
+
+.underline {
+  border-bottom: 1px dotted #ffffff; }
+
+.v-center-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .v-center-outer .v-center {
+    display: table;
+    height: 100%;
+    width: 100%; }
+    .v-center-outer .v-center .v-center-inner {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center; }
+
+.button, .combi {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 12px;
+  padding: 10px 15px; }
+  .button:hover, .combi:hover {
+    background: transparent;
+    border: 3px solid;
+    padding: 7px 12px; }
+
+/* !------------------ HEADER -------------------- */
+header {
+  background-color: #AAE505;
+  background-image: url(../img/gym.png);
+  background-image: linear-gradient(transparent, transparent), url(../img/gym.svg);
+  background-size: cover;
+  background-position-x: -50px;
+  height: 100vh; }
+  header .container {
+    position: relative; }
+  header h1 {
+    color: #ffffff; }
+  header p {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 auto;
+    color: #ffffff;
+    margin-bottom: 60px; }
+  header .button {
+    background-color: #ffffff;
+    color: #8BAA0B;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+    header .button:hover {
+      border-color: #ffffff;
+      color: #ffffff; }
+
+/* !------------------ ABOUT -------------------- */
+.about .col:first-child {
+  margin-bottom: 60px; }
+.about a {
+  color: #333333;
+  text-decoration: none;
+  border-bottom: 1px dotted #333333; }
+  .about a:hover {
+    border: none; }
+
+/* !------------------ TICKETS -------------------- */
+.tickets {
+  background-color: #333333; }
+  .tickets p, .tickets h2 {
+    color: #ffffff; }
+  .tickets h2 {
+    margin-bottom: 15px; }
+  .tickets p {
+    margin-bottom: 30px; }
+  .tickets .sm {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px dotted #ffffff; }
+    .tickets .sm:hover {
+      border: none; }
+  .tickets .combi {
+    border: 3px solid #AAE505;
+    background: transparent;
+    color: #AAE505;
+    padding: 7px 12px;
+    display: block;
+    margin: 0 auto; }
+    .tickets .combi:hover {
+      border: 3px solid #AAE505 !important;
+      background-color: #AAE505 !important;
+      color: #333333 !important; }
+  .tickets .button {
+    background-color: #ffffff;
+    color: #333333;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px; }
+    .tickets .button.button:hover {
+      border-color: #ffffff !important;
+      background: transparent;
+      color: #ffffff; }
+  .tickets .ticketoption {
+    margin: 0 auto;
+    display: table; }
+
+/* !------------------ INFO -------------------- */
+.info {
+  margin: 0 auto;
+  text-align: center; }
+  .info ul {
+    margin: 0 auto;
+    display: block; }
+    .info ul li {
+      padding: 20px 0 10px 0;
+      border-top: 1px solid #eaeaea; }
+      .info ul li a {
+        text-decoration: none;
+        color: #333333; }
+
+/* !------------------ FOOTER -------------------- */
+footer {
+  background-color: #AAE505; }
+  footer .container {
+    padding: 15px 0; }
+    footer .container a {
+      color: #333333;
+      text-decoration: none;
+      border-bottom: 1px dotted #333333; }
+      footer .container a:hover {
+        border: none; }
+    footer .container .imd-logo {
+      width: 30px;
+      border: none; }
