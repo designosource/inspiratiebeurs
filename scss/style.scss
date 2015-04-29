@@ -18,13 +18,12 @@ html {
 }
 
 p, li, a{
-	
 	color: $donkergrijs;
 }
 
 
 h1{
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	text-transform: uppercase;
 	font-weight: 800;
 	margin-bottom: 30px;
@@ -32,7 +31,7 @@ h1{
 }
 
 h2, .info li{
-	font-family: sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 15px;
 	text-transform: uppercase;
 	font-weight: 800;
@@ -43,10 +42,10 @@ h2, .info li{
 	margin-bottom: 30px;
 }
 
-p{
-	font-family: serif;
-	font-style: italic;
+p, a{
+	font-family: 'Muli', sans-serif;
 	line-height: 25px;
+	font-size: 14px;
 }
 
 .underline{
@@ -72,17 +71,17 @@ p{
 }
 
 .button, .combi{
-		font-family: sans-serif;
+		font-family: 'Josefin Sans', sans-serif;
 		text-transform: uppercase;
 		text-decoration: none;
 		font-weight: 800;
 		font-size: 12px;
-		padding: 10px 15px;
+		padding: 10px 15px 8px 15px;
 		
 		&:hover{
 			background: transparent;
 			border: 3px solid;
-			padding: 7px 12px;
+			padding: 7px 12px 5px 12px;
 		}
 	}
 	
@@ -100,6 +99,15 @@ header{
 	background-position-x: -50px;
 	height: 100vh;
 	
+	.meerinfo{
+		text-align: center;
+		position: absolute;
+		bottom: -50px;
+		width: 20%;
+		left: 40%;
+		right: 40%;
+		a{line-height: 18px;text-decoration: none; color:$wit;font-size: 15px;}
+	}
 	
 	.container{
 		position: relative;
@@ -110,7 +118,7 @@ header{
 	}
 	
 	p{
-		font-size: 20px;
+		font-size: 17px;
 		line-height: 30px;
 		margin: 0 auto;
 		color: $wit;
@@ -184,7 +192,7 @@ header{
 		border: 3px solid $groen;
 		background: transparent;
 		color: $groen;		
-		padding: 7px 12px;
+		padding: 7px 12px 5px 12px;
 		display: block;
 		margin: 0 auto;
 		
