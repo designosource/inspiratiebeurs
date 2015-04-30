@@ -7,7 +7,17 @@
 		h1{
 			font-size: 40px;
 		}
+		.meerinfo{
+		display: inline-block;
+		text-align: center;
+		position: absolute;
+		bottom: -50px;
+		width: 20%;
+		left: 40%;
+		right: 40%;
+			a{line-height: 18px;text-decoration: none; color:#ffffff;font-size: 15px;}		}
 	}
+	
 	
 	
 	.tickets{
@@ -60,6 +70,19 @@
 	.col2{
 		display: table-cell;
 		vertical-align: top;
+	}
+	
+	.col3{
+		display: inline-block;
+		width: 45%;
+		text-align: left;
+		vertical-align: top;
+		&:first-child{
+			float: left;
+		}
+		&:right-child{
+			float: right;
+		}
 	}
 	
 	.icon{
