@@ -77,20 +77,20 @@ p, a{
 		font-weight: 800;
 		font-size: 12px;
 		padding: 10px 15px 8px 15px;
-		
+
 		&:hover{
 			background: transparent;
 			border: 3px solid;
 			padding: 7px 12px 5px 12px;
 		}
 	}
-	
+
 	.cf{
 		*zoom: 1;
 		&:before,
 		&:after {
-			content: " "; 
-			display: table; 
+			content: " ";
+			display: table;
 		}
 		&:after {
 			clear: both;
@@ -103,25 +103,25 @@ p, a{
 header{
 	background-color: $groen;
 	background-image: url(../img/gym.png);
-	background-image: 
+	background-image:
     linear-gradient(transparent, transparent),
     url(../img/gym.svg);
 	background-size: cover;
 	background-position-x: -50px;
 	height: 100vh;
-	
+
 	.meerinfo{
 		display: none;
 	}
-	
+
 	.container{
 		position: relative;
 	}
-	
+
 	h1{
 		color: $wit;
 	}
-	
+
 	p{
 		font-size: 17px;
 		line-height: 30px;
@@ -129,15 +129,15 @@ header{
 		color: $wit;
 		margin-bottom: 60px;
 	}
-	
+
 	.button{
 		background-color: $wit;
 		color: $donkergroen;
-		
+
 		box-sizing:border-box;
 		-moz-box-sizing:border-box;
 		-webkit-box-sizing:border-box;
-		
+
 		&:hover{
 			border-color: $wit;
 			color: $wit;
@@ -153,12 +153,12 @@ header{
 	.col3:first-child{
 		margin-bottom: 60px;
 	}
-	
+
 	a{
 			color: $donkergrijs;
 			text-decoration: none;
 			border-bottom: 1px dotted $donkergrijs;
-			
+
 			&:hover{
 				border: none;
 			}
@@ -170,58 +170,58 @@ header{
 /* !------------------ TICKETS -------------------- */
 .tickets{
 	background-color: $donkergrijs;
-	
+
 	p, h2{
 		color: $wit;
 	}
-	
+
 	h2{
 		margin-bottom: 15px;
 	}
-	
+
 	p{
 		margin-bottom: 30px;
 	}
-	
+
 	.sm{
 		color: $wit;
 		text-decoration: none;
 		border-bottom: 1px dotted $wit;
-			
+
 			&:hover{
 				border: none;
 			}
 	}
-	
+
 	.combi{
 		border: 3px solid $groen;
 		background: transparent;
-		color: $groen;		
+		color: $groen;
 		padding: 7px 12px 5px 12px;
 		display: block;
 		margin: 0 auto;
-		
+
 		&:hover{
 			border: 3px solid $groen !important;
 			background-color: $groen !important;
 			color: $donkergrijs !important;
 		}
 	}
-	
+
 	.button{
 		background-color: $wit;
 		color: $donkergrijs;
 		display: block;
 		margin: 0 auto;
 		margin-bottom: 15px;
-		
+
 		&.button:hover{
 			border-color: $wit !important;
 			background: transparent;
 			color: $wit;
 		}
 	}
-	
+
 	.ticketoption{
 		margin: 0 auto;
 		display: table;
@@ -232,7 +232,7 @@ header{
 .info{
 	margin: 0 auto;
 	text-align: center;
-	
+
 	ul{
 	margin: 0 auto;
 	display: block;
@@ -240,7 +240,7 @@ header{
 			padding: 20px 0 10px 0;
 			border-top: 1px solid #eaeaea;
 			a{
-				text-decoration: none; 
+				text-decoration: none;
 				color: $donkergrijs;
 			}
 		}
@@ -252,24 +252,27 @@ footer{
 	background-color: $groen;
 	.container{
 		padding: 20px 0 15px 0;
-		
+
 		a{
 			color: $donkergrijs;
 			text-decoration: none;
 			border-bottom: 1px dotted $donkergrijs;
-			
+
 			&:hover{
 				border: none;
 			}
 		}
-		
-		
-		.imd-logo, .tm-logo{
+
+
+		.imd-logo, .tm-logo, .designosource-logo{
 			height: 30px;
 			border: none;
+			img{
+				height: 30px;
+			}
 		}
-		
-		.tm-logo{
+
+		.tm-logo, .imd-logo{
 			margin-left: 15px;
 		}
 	}
